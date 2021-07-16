@@ -119,5 +119,27 @@
         
         <!-- SCRIPT -->
         <script src="./bundle.js"></script>
+        <script>
+            // Clear Storage
+            let buttonC = document.body.getElementsByClassName("clearStorage")[0];
+
+            buttonC.onclick = function cleanStorage() {
+            countMovie = 0;
+            
+            // Poster Clear
+            document.getElementById("imgInfoCard1").src = "./images/poster-sample.png";
+            document.getElementById("imgInfoCard2").src = "./images/poster-sample.png";
+            document.getElementById("imgInfoCard3").src = "./images/poster-sample.png";
+
+            // Titles Clear
+            document.getElementById("titleInfoCard1").innerText = "";
+            document.getElementById("titleInfoCard2").innerText = "";
+            document.getElementById("titleInfoCard3").innerText = "";
+
+            localStorage.clear();
+
+            console.log("clear");
+            };
+        </script>
     </body>
 </html>

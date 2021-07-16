@@ -313,28 +313,4 @@ if (localStorage.getItem("infoTitleCard3").length > 10) {
   document.getElementById("titleInfoCard3").innerText = `${localStorage.getItem("infoTitleCard3").substring(0,7)}...`
 } else if (localStorage.getItem("infoTitleCard3").length < 10) {
   document.getElementById("titleInfoCard3").innerText = localStorage.getItem("infoTitleCard3")
-}
-
-// Clear Storage
-let buttonC = document.body.getElementsByClassName("clearStorage")[0];
-
-buttonC.addEventListener('click', () => {
-  cleanStorage();
-  setTimeout(localStorage.clear(), 1000)
-})
-
-function cleanStorage() {
-  countMovie = 0;
- 
-  // Poster Clear
-  document.getElementById("imgInfoCard1").src = "./images/poster-sample.png";
-  document.getElementById("imgInfoCard2").src = "./images/poster-sample.png";
-  document.getElementById("imgInfoCard3").src = "./images/poster-sample.png";
-
-  // Titles Clear
-  document.getElementById("titleInfoCard1").innerText = "";
-  document.getElementById("titleInfoCard2").innerText = "";
-  document.getElementById("titleInfoCard3").innerText = "";
-
-  console.log("clear");
 };
