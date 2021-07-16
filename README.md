@@ -38,20 +38,15 @@
 * Environment&nbsp;variables
 
 ## API e utilizzo
-Per la creazione di Ororo ho utilizzato 2 API: 
-la AQICN e la OpenWeather.
+La creazione della SPA nasce dal cercare di dare una risposta alla classica domanda che, prima o poi, ogni utente si farà: "Che cosa guardo stasera?".
 
-La prima estrapola le informazioni relative lo stato dell'aria, definendo la presenza di particolato nocivo.
+L'applicazione, tramite l'uso dell'API TMDB, effettua una chiamata al database di riferimento, evitando allo user la fatica di cercare un film manualmente, ma tramite un generatore casuale, consiglia, tramite una scheda, minimale ma completa, un film, permettendo di salvare, tramite il menu, fino a 3 dei prodotti scelti.
+L'app implementa il local storage, così che, ritorando sulla pagina sia possibile, all'utente ritrovare i film salvati o, eventualmente, cancellarli. 
 
-La seconda restituisce parametri quali temperatura, pressione, umidità, ecc...
-
-L'uso è semplice: basta inserire il nome di una città, o cliccare sul tasto gps, per avere informazioni su questi parametri.
-Se la città non è corretta o non esiste, un disclaimer avvertirà dell'errore.
-
-É possibile provare l'app in modalità produzione a questo link: https://ororo-giacomo-borsellino.netlify.app/
+É possibile provare l'app in modalità produzione a questo link: https://whatwatch-app.netlify.app/
 o provarla in modalità dev, seguendo la sezione <a href="#installazione">Installazione</a>
 
-N.b. É possibile che certe località dispongano dello stato meteorologico e non di quello dell'aria.
+
 
 ## Prerequisiti
 
@@ -63,13 +58,13 @@ N.b. É possibile che certe località dispongano dello stato meteorologico e non
 1. Clona il repository
 
    ```sh
-   git clone https://github.com/GiacomoBorsellino/Ororo
+   git clone https://github.com/GiacomoBorsellino/WhatWatch
    ```
 
 2. Entra nella cartella
 
    ```sh
-   Cd ororo
+   Cd WhatWatch
    ```
 
 3. Installa NPM
@@ -80,9 +75,9 @@ N.b. É possibile che certe località dispongano dello stato meteorologico e non
    ```
 
 4. Cambia file .env.example in .env e inserisci le tue keys
-   (le API richiedono 2 keys per funzionare, richiedile sui siti dedicati).
-[Air Quality Open Data Platform](https://aqicn.org/data-platform/token/#/).
-[Open Weather](https://home.openweathermap.org/).
+   (l' API richiede una key per funzionare, richiedila sul sito dedicato).
+    [Air Quality Open Data Platform](https://developers.themoviedb.org/3/getting-started/introduction).
+
 
 5. Crea la build
 
@@ -106,10 +101,9 @@ Giacomo Borsellino - giacomoborsellino at gmail dot it
 
 Profilo Linkedin, per collaborazioni o proposte di lavoro: [Linkedin](https://www.linkedin.com/in/giacomo-borsellino-4039071b7/)
 
-Link all'app: [Ororo](https://ororo-giacomo-borsellino.netlify.app/)
+Link all'app: [WhatWatch](https://whatwatch-app.netlify.app/)
 
 ## Crediti
 
 * [Best-README-Template](https://github.com/othneildrew/Best-README-Template)
-* [Air Pollution: Real-time Air Quality Index (AQI)](https://aqicn.org/)
-* [Open Weather](https://home.openweathermap.org/)
+* [The Movie Database (TMDB) API](https://developers.themoviedb.org/3/getting-started/introduction)
