@@ -78,7 +78,7 @@ N.b. La key è nascosta opportunamente tramite l'uso delle environment variables
 
 4. Cambia file .env.example in .env e inserisci le tue keys
    (l' API richiede una key per funzionare, richiedila sul sito dedicato).
-    [Air Quality Open Data Platform](https://developers.themoviedb.org/3/getting-started/introduction).
+    [The Movie Database API](https://developers.themoviedb.org/3/getting-started/introduction).
 
 
 5. Crea la build
