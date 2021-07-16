@@ -314,3 +314,6 @@ if (localStorage.getItem("infoTitleCard3").length > 10) {
 } else if (localStorage.getItem("infoTitleCard3").length < 10) {
   document.getElementById("titleInfoCard3").innerText = localStorage.getItem("infoTitleCard3")
 };
+
+// Clear Storage
+// --> In Index.html
