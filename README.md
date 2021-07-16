@@ -33,7 +33,7 @@
 * Javascript
 * Webpack
 * NPM
-* dotenv
+* Local Storage
 * API
 * Environment&nbsp;variables
 
