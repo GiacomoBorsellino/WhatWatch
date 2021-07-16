@@ -8,10 +8,10 @@
   <h3 align="center">WhatWatch</h3>
 
   <p align="center">
-    WhatWatch è una single page application creata con lo scopo di aiutare l'utente suggerendogli un prodotto audiovisivo, da un database di 600K+, di cui visualizzerà la scheda e che avrà la possibilità di salvare .
+    WhatWatch è una single page application creata con lo scopo di aiutare l'utente suggerendogli un prodotto audiovisivo, da un database di 600K+, di cui visualizzerà la scheda e che avrà la possibilità di salvare.
   </p>
     <p align="center">
-    <img src="https://raw.githubusercontent.com/GiacomoBorsellino/Ororo/main/src/images/Immagine.jpg" alt="screenshot" width="80%">
+    <img src="/src/images/screen.png" alt="screenshot" width="80%">
   </p>
 </p>
 
