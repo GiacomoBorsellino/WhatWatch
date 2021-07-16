@@ -46,6 +46,8 @@ L'app implementa il local storage, così che, ritorando sulla pagina sia possibi
 É possibile provare l'app in modalità produzione a questo link: https://whatwatch-app.netlify.app/
 o provarla in modalità dev, seguendo la sezione <a href="#installazione">Installazione</a>
 
+N.b. La key è nascosta opportunamente tramite l'uso delle environment variables, sfruttate utilizzando webpack e il sistema di Netlify.
+
 
 
 ## Prerequisiti
