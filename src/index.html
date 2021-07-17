@@ -35,17 +35,17 @@
             <!-- SAVED MOVIE -->
             <div class="savedContainer">
 
-                <div class="savedSubContainer" onclick="clickSavedMovie1()">
+                <div class="savedSubContainer mov1">
                     <img id="imgInfoCard1" src="./images/poster-sample.png" alt="movie"/>
                     <h5 id="titleInfoCard1"></h5>                        
                 </div>
 
-                <div class="savedSubContainer" onclick="clickSavedMovie2()">
+                <div class="savedSubContainer mov2">
                     <img id="imgInfoCard2" src="./images/poster-sample.png" alt="movie"/>
                     <h5 id="titleInfoCard2"></h5>                        
                 </div>
 
-                <div class="savedSubContainer" onclick="clickSavedMovie3()">
+                <div class="savedSubContainer mov3">
                     <img id="imgInfoCard3" src="./images/poster-sample.png" alt="movie"/>
                     <h5 id="titleInfoCard3"></h5>                        
                 </div> 
@@ -139,6 +139,22 @@
             localStorage.clear();
 
             console.log("clear");
+            };
+        </script>
+        <script>
+            /* INJECT MOVIE SAVED */
+            // Click on Saved Movie
+            let movie1 = document.body.getElementsByClassName("mov1")[0];
+                movie1.onclick = function clickSavedMovie1() {
+                document.body.getElementsByClassName("cardContainer")[0].outerHTML = localStorage.getItem("movie1");
+            };
+            let movie2 = document.body.getElementsByClassName("mov2")[0];
+                movie2.onclick = function clickSavedMovie2() {
+                document.body.getElementsByClassName("cardContainer")[0].outerHTML = localStorage.getItem("movie2");
+            };
+            let movie3 = document.body.getElementsByClassName("mov3")[0];
+                movie3.onclick = function clickSavedMovie3() {
+                document.body.getElementsByClassName("cardContainer")[0].outerHTML = localStorage.getItem("movie3");
             };
         </script>
     </body>

@@ -317,3 +317,6 @@ if (localStorage.getItem("infoTitleCard3").length > 10) {
 
 // Clear Storage
 // --> In Index.html
+
+/* INJECT MOVIE SAVED */
+// --> In Index.html
