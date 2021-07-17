@@ -182,11 +182,10 @@ buttSearch.onclick = async function randomSearch() {
 
 /* REMOVE ADULT FILTER */
 let butt = document.body.getElementsByClassName("alertAdult")[0];
-
-butt.onclick = function removeAdultFilter() {
+butt.addEventListener('click', () => {
     document.body.getElementsByClassName("alertAdult")[0].style.display = "none";
-    imgCard.style.filter = "blur(0px)";
-};
+    imgCard.style.filter = "blur(0px)";  
+})
 
 /* LOCAL STORAGE */
 let countMovie = 0;
