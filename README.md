@@ -38,9 +38,8 @@
 * Environment&nbsp;variables
 
 ## API e utilizzo
-La creazione della SPA nasce dal cercare di dare una risposta alla classica domanda che, prima o poi, ogni utente si farà: "Che cosa guardo stasera?".
-
-L'applicazione, tramite l'uso dell'API TMDB, effettua una chiamata al database di riferimento, evitando allo user la fatica di cercare un film manualmente, ma tramite un generatore casuale, consiglia, tramite una scheda, minimale ma completa, un film, permettendo di salvare, tramite il menu, fino a 3 dei prodotti scelti.
+WhatWatch è una single page application creata con lo scopo di rispondere alla domanda "Cosa guardo stasera?" che spesso ognuno di noi si pone.
+La SPA si pone come obiettivo quello di semplificare la vita dell'utente, fornendo una risposta immediata e permettendo di scoprire generi e opere di taglio e tipologia totalmente diverse tra loro con lo scopo di ampliare la cultura dell'utente stesso e velocizzando il processo di scelta.
 L'app implementa il local storage, così che, ritorando sulla pagina sia possibile, all'utente ritrovare i film salvati o, eventualmente, cancellarli. 
 
 É possibile provare l'app in modalità produzione a questo link: https://whatwatch-app.netlify.app/
