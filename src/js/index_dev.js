@@ -6,8 +6,8 @@ import '../images/logotipo.png';
 import '../images/menu.png';
 import '../images/menuClose.png';
 import '../images/next.png';
-import '../images/pattern-color.png';
-import '../images/poster-sample.png';
+import '../images/pattern-color.jpg';
+import '../images/poster-sample.jpg';
 import '../images/square.png';
 import '../images/squareBig.png';
 import '../images/square-colored.png';
@@ -130,7 +130,7 @@ buttSearch.onclick = async function randomSearch() {
                 title ? titleCard.innerText = title : titleCard.innerText = "No title found";
 
                 const poster = await response.poster_path;          
-                poster ? imgCard.src = posterUrl+poster : imgCard.src = `./images/poster-sample.png`;
+                poster ? imgCard.src = posterUrl+poster : imgCard.src = `./images/poster-sample.jpg`;
       
                 const genres = await response.genres;
                 if (genres.length !== 0) {
@@ -279,7 +279,7 @@ function clickSavedMovie3() {
 if (localStorage.getItem("infoPosterCard1")) {
   document.getElementById("imgInfoCard1").src = localStorage.getItem("infoPosterCard1")
 } else {
-  document.getElementById("imgInfoCard1").src = "./images/poster-sample.png";
+  document.getElementById("imgInfoCard1").src = "./images/poster-sample.jpg";
 }
 
 if (localStorage.getItem("infoTitleCard1").length > 10) {
@@ -292,7 +292,7 @@ if (localStorage.getItem("infoTitleCard1").length > 10) {
 if (localStorage.getItem("infoPosterCard2")) {
   document.getElementById("imgInfoCard2").src = localStorage.getItem("infoPosterCard2")
 } else {
-  document.getElementById("imgInfoCard2").src = "./images/poster-sample.png";
+  document.getElementById("imgInfoCard2").src = "./images/poster-sample.jpg";
 }
 
 if (localStorage.getItem("infoTitleCard2").length > 10) {
@@ -305,7 +305,7 @@ if (localStorage.getItem("infoTitleCard2").length > 10) {
 if (localStorage.getItem("infoPosterCard3")) {
   document.getElementById("imgInfoCard3").src = localStorage.getItem("infoPosterCard3")
 } else {
-  document.getElementById("imgInfoCard3").src = "./images/poster-sample.png";
+  document.getElementById("imgInfoCard3").src = "./images/poster-sample.jpg";
 }
 
 if (localStorage.getItem("infoTitleCard3").length > 10) {
