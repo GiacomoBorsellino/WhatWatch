@@ -6,8 +6,8 @@ import '../images/logotipo.png';
 import '../images/menu.png';
 import '../images/menuClose.png';
 import '../images/next.png';
-import '../images/pattern-color.png';
-import '../images/poster-sample.png';
+import '../images/pattern-color.jpg';
+import '../images/poster-sample.jpg';
 import '../images/square.png';
 import '../images/squareBig.png';
 import '../images/square-colored.png';
@@ -119,7 +119,6 @@ buttSearch.onclick = async function randomSearch() {
     let yearCard = document.getElementById("year");
     let genCard = document.getElementById("gen");
     let overviewCard = document.body.getElementsByClassName("overview")[0];
-
 
     try {
         const fet = await fetch(url);

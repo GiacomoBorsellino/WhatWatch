@@ -13,7 +13,7 @@
 }
 
 body {
-    background-image:url(./images/pattern-color.png); 
+    background-image:url(./images/pattern-color.jpg); 
     background-repeat: repeat;
     font-family: 'Righteous', cursive;
     overflow: hidden;
@@ -103,7 +103,7 @@ body {
 
 /* TAB MENU */
 .tabContainer {
-    background-image: url(./images/pattern-color.png);
+    background-image: url(./images/pattern-color.jpg);
     background-repeat: repeat;
 
     display: flex;
